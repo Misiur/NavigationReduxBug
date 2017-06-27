@@ -14,11 +14,11 @@ import {
 
 import { addNavigationHelpers, StackNavigator } from 'react-navigation';
 import { createStore, combineReducers } from 'redux';
-import { connect } from 'react-redux';
+import { connect, Provider } from 'react-redux';
 
 const Foo = () => {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>Hello there</Text>
     </View>
   );
@@ -26,7 +26,7 @@ const Foo = () => {
 
 const Bar = () => {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>General kenobi</Text>
     </View>
   );
